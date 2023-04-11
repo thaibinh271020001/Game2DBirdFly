@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public bool isToochingGround;*/
     // Start is called before the first frame update
+
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
@@ -35,4 +36,6 @@ public class PlayerController : MonoBehaviour
 
         
     }
+
+    
 }
