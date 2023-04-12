@@ -37,5 +37,14 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Line")
+        {
+            player.AddForce(-collision.contacts[0].normal * 20, ForceMode2D.Impulse);
+            Debug.Log("Line");
+        }
+    }
+
+
 }
