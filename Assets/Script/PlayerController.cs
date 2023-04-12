@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    StartPlayer st = new StartPlayer();
+    StartGame st = new StartGame();
 
     public float speed = 5f;
     public float Jumpspeed = 8f;
@@ -34,9 +34,11 @@ public class PlayerController : MonoBehaviour
 
         player.velocity = new Vector2(direction * speed, player.velocity.y);
 
-        if (Input.GetMouseButtonDown(0) && st.isStart == false)
+        if (Input.GetMouseButtonDown(0))
         {
             player.velocity = new Vector2(player.velocity.x, Jumpspeed);
+            GetComponent<Rigidbody2D>().gravityScale = 1;
+
         }
     }
 
