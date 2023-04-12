@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    StartPlayer st = new StartPlayer();
+
     public float speed = 5f;
     public float Jumpspeed = 8f;
     public float direction = 0f;
     public Rigidbody2D player;
+
 
     /*public Transform groundCheck;
     public float groundCheckRadius = 0f;
@@ -18,6 +21,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+
+        
     }
 
     // Update is called once per frame
@@ -29,12 +34,10 @@ public class PlayerController : MonoBehaviour
 
         player.velocity = new Vector2(direction * speed, player.velocity.y);
 
-        if (Input.GetButtonDown("Jump") /*&& isToochingGround*/)
+        if (Input.GetMouseButtonDown(0) && st.isStart == false)
         {
             player.velocity = new Vector2(player.velocity.x, Jumpspeed);
         }
-
-        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -45,6 +48,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Line");
         }
     }
+
+    
 
 
 }

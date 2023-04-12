@@ -11,7 +11,6 @@ public class StartButton : MonoBehaviour
 
     
     public GameObject Button;
-    public GameObject player;
     void Start()
     {
         
