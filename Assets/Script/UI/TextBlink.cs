@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class TextBlink : MonoBehaviour
 {
-    public float minTime = 0.5f;
+    public float minTime = 1f;
     public float maxTime = 1.2f;
 
-    private float timer;
+    public float timer;
     private Text textFlicker;
 
     void Start()
     {
         textFlicker = GetComponent<Text>();
         timer += Random.Range(minTime, maxTime);
+        Debug.Log(timer);
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
@@ -26,5 +26,6 @@ public class TextBlink : MonoBehaviour
             textFlicker.enabled = !textFlicker.enabled;
             timer = Random.Range(minTime, maxTime);
         }
+        
     }
 }

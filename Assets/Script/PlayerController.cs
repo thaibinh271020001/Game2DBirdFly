@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             player.velocity = new Vector2(player.velocity.x, Jumpspeed);
-            GetComponent<Rigidbody2D>().gravityScale = 1;
+            GetComponent<Rigidbody2D>().gravityScale = 2;
 
         }
     }
