@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     StartGame st = new StartGame();
 
     public float speed = 5f;
-    public float Jumpspeed = 8f;
+    public float Jumpspeed = 12f;
     public float direction = 0f;
     public Rigidbody2D player;
 
