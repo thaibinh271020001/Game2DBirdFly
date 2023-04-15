@@ -11,6 +11,8 @@ public class StartGame : MonoBehaviour
     public GameObject btnShop;
     public GameObject textPoint;
 
+    private Rigidbody2D rb;
+
     void Update()
     {
         clickToStart();
@@ -26,6 +28,7 @@ public class StartGame : MonoBehaviour
             btnLeaderboard.SetActive(false);
             btnShop.SetActive(false);
             textPoint.SetActive(true);
+
         }
     }
 }

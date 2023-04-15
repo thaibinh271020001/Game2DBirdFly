@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class StartButton : MonoBehaviour
 {
     // Start is called before the first frame update
-
-
-    
     public GameObject Button;
     void Start()
     {
