@@ -20,21 +20,19 @@ public class PlayerController : MonoBehaviour
         direction = Input.GetAxis("Horizontal");
         /*isToochingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);*/
 
-
         /*player.velocity = new Vector2(direction * speed, player.velocity.y);*/
 
         if (Input.GetMouseButtonDown(0))
         {
-            player.velocity = new Vector2(5f, Jumpspeed);
             GetComponent<Rigidbody2D>().gravityScale = 2;
-            
-        }
-
-        if(transform.position.x >= 3.57)
-        {
-            transform.Rotate(0, 180, 0);
-            Debug.Log(transform.position.x);
+            if (Mathf.Approximately(transform.eulerAngles.y,180f))
+            {
+                player.velocity = new Vector2(-5f, Jumpspeed);
+            }
+            else
+            {
+                player.velocity = new Vector2(5f, Jumpspeed);
+            }
         }
     }
-
 }
