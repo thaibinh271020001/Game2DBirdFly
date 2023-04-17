@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         /*isToochingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);*/
 
         /*player.velocity = new Vector2(direction * speed, player.velocity.y);*/
-
+        
         if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Rigidbody2D>().gravityScale = 2;
