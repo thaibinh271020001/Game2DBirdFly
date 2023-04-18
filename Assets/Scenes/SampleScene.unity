@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.0773, y: -165}
+  m_AnchoredPosition: {x: 5.3, y: -165}
   m_SizeDelta: {x: 285.9547, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &833561
@@ -212,13 +212,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press to play a game
+  m_Text: Tap to play game
 --- !u!1 &82426490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4276338732681686867, guid: f16f6a210440df44e87687a72d5825c9, type: 3}
       propertyPath: m_Name
-      value: Bird 1 Pink_0
+      value: Bird 1
       objectReference: {fileID: 0}
     - target: {fileID: 4276338732681686867, guid: f16f6a210440df44e87687a72d5825c9, type: 3}
       propertyPath: m_Layer
@@ -1464,6 +1464,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a023e5a4dbcb7941903796bd0ceb7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &599274303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599274289}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b4c5a146ae0454bb0bb9fd6936b44b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &747836883
@@ -3551,6 +3563,7 @@ GameObject:
   - component: {fileID: 2142011360}
   - component: {fileID: 2142011361}
   - component: {fileID: 2142011362}
+  - component: {fileID: 2142011363}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -3640,3 +3653,19 @@ MonoBehaviour:
   objectToBeSpawned: {fileID: 2142011359}
   inputNumberOfSpawn: 0
   Parent: {fileID: 1458194640}
+--- !u!70 &2142011363
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142011359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1.24}
+  m_Direction: 0

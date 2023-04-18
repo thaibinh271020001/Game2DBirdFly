@@ -23,7 +23,7 @@ public class PlayerBounce : MonoBehaviour
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
-        rb.velocity = direction * Mathf.Max(speed, 0f);
+        rb.velocity = direction * speed;
         if(collision.gameObject.name == "Line2" || collision.gameObject.name == "Line4")
         {
             transform.Rotate(0, -180, 0);
