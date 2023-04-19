@@ -30,7 +30,7 @@ public class SpawnItem : MonoBehaviour
             }
 
             Invoke("SpawnObject", 5f);
-            Vector2 spawnPosition = new Vector2(Random.Range(-4, 4), Random.Range(-6, 6));
+            Vector2 spawnPosition = new Vector2(Random.Range(-3, 3), Random.Range(-9/2, 9/2));
             StartCoroutine(WaitForSixSeconds());
             RemoveSpawn = SpawnObject();
         }
@@ -43,7 +43,7 @@ public class SpawnItem : MonoBehaviour
 
     GameObject SpawnObject()
     {
-        return Instantiate(objectToBeSpawned, new Vector2(Random.Range(-4, 4), Random.Range(-6, 6)), Quaternion.identity, Parent);
+        return Instantiate(objectToBeSpawned, new Vector2(Random.Range(-3, -3), Random.Range(-9/2, 9/2)), Quaternion.identity, Parent);
     }
     void OnDisable()
     {
