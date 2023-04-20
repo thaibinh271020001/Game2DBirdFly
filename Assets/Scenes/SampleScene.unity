@@ -2242,7 +2242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078264922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.73, y: -5.79, z: 0}
+  m_LocalPosition: {x: -2.85, y: -5.79, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2930,7 +2930,7 @@ GameObject:
   - component: {fileID: 1514394550}
   m_Layer: 0
   m_Name: Line1
-  m_TagString: AllLine
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3341,7 +3341,7 @@ GameObject:
   - component: {fileID: 1771721896}
   m_Layer: 0
   m_Name: Line3
-  m_TagString: AllLine
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

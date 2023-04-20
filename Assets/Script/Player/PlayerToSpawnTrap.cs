@@ -22,7 +22,7 @@ public class PlayerToSpawnTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpawnTrap();
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,14 +31,18 @@ public class PlayerToSpawnTrap : MonoBehaviour
         {
             Point++;
         }
+
+        SpawnTrap();
     }
 
     void SpawnTrap()
     {
-        switch(Point){
+        switch (Point)
+        {
             case 1:
                 Debug.Log(Point);
                 Trap3.SetActive(true);
+                Trap3.transform.position = new Vector2(Random.Range(-3, 3), Trap3.transform.position.y);
                 break;
             case 2:
                 Debug.Log(Point);
