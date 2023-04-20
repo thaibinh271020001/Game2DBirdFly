@@ -5,13 +5,13 @@ using UnityEngine;
 public class SpawnItem : MonoBehaviour
 {
     public GameObject objectToBeSpawned;
-    public int inputNumberOfSpawn;
     public Transform Parent;
+    private GameObject nameTag;
 
-    private GameObject RemoveSpawn;
+    private GameObject SetAcitveSpawn;
     void Start()
     {
-        RemoveSpawn = objectToBeSpawned;
+        SetAcitveSpawn = objectToBeSpawned;
     }
 
     void Update()
@@ -24,31 +24,27 @@ public class SpawnItem : MonoBehaviour
 
         if (other.gameObject.name == "Bird 1")
         {
-            if (RemoveSpawn != null)
+            if (SetAcitveSpawn != null)
             {
-                Destroy(RemoveSpawn);
+                SetAcitveSpawn.SetActive(false);
             }
 
             Invoke("SpawnObject", 5f);
-            Vector2 spawnPosition = new Vector2(Random.Range(-3, 3), Random.Range(-9/2, 9/2));
-            StartCoroutine(WaitForSixSeconds());
-            RemoveSpawn = SpawnObject();
-        }
-    }
 
-    IEnumerator WaitForSixSeconds()
-    {
-        yield return new WaitForSeconds(6f);
+        }
     }
 
     GameObject SpawnObject()
     {
-        return Instantiate(objectToBeSpawned, new Vector2(Random.Range(-3, -3), Random.Range(-9/2, 9/2)), Quaternion.identity, Parent);
+        var result = Instantiate(objectToBeSpawned, new Vector2(Random.Range(-3, -3), Random.Range(-9 / 2, 9 / 2)), Quaternion.identity, Parent);
+        result.tag = "Spawned";
+        result.SetActive(true);
+        return result;
     }
     void OnDisable()
     {
         gameObject.GetComponent<SpawnItem>().enabled = true;
-    }
+        
 
-   
+    }
 }
