@@ -21,18 +21,25 @@ public class PlayerController : MonoBehaviour
         /*isToochingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);*/
 
         /*player.velocity = new Vector2(direction * speed, player.velocity.y);*/
-        
-        if (Input.GetMouseButtonDown(0))
+
+        /*if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Rigidbody2D>().gravityScale = 2;
-            if (Mathf.Approximately(transform.eulerAngles.y,180f))
-            {
-                player.velocity = new Vector2(-5f, Jumpspeed);
-            }
-            else
+            if (Mathf.Approximately(transform.eulerAngles.y, 0f) == true)
             {
                 player.velocity = new Vector2(5f, Jumpspeed);
+                Debug.Log(player.velocity);
+
+            }else
+            {
+                player.velocity = new Vector2(-5f, Jumpspeed);
+                Debug.Log(player.velocity);
             }
-        }
+            Debug.Log(transform.rotation);
+        }*/
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
