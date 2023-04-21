@@ -26,7 +26,7 @@ public class PlayerBounce : MonoBehaviour
             GetComponent<Rigidbody2D>().gravityScale = 2;
             rb.velocity = vt;
             Debug.Log(vt);
-            
+
         }
     }
 
@@ -41,7 +41,7 @@ public class PlayerBounce : MonoBehaviour
             transform.Rotate(0, -180, 0);
         }
 
-        if(collision.gameObject.name == "Line4")
+        if (collision.gameObject.name == "Line4")
         {
             vt = vt2;
         }
