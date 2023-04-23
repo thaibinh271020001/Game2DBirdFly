@@ -180,10 +180,10 @@ TextureImporter:
       name: Bird4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1878
-        width: 800
-        height: 626
+        x: 144
+        y: 1992
+        width: 480
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: Bird4_1
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1878
-        width: 800
-        height: 626
+        x: 941
+        y: 1995
+        width: 483
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: Bird4_2
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1878
-        width: 800
-        height: 626
+        x: 1734
+        y: 2005
+        width: 490
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: Bird4_3
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 1878
-        width: 800
-        height: 626
+        x: 2527
+        y: 1985
+        width: 497
+        height: 347
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: Bird4_4
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 1878
-        width: 800
-        height: 626
+        x: 3325
+        y: 1971
+        width: 499
+        height: 363
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: Bird4_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1252
-        width: 800
-        height: 626
+        x: 127
+        y: 1354
+        width: 497
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: Bird4_6
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1252
-        width: 800
-        height: 626
+        x: 931
+        y: 1383
+        width: 493
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +327,10 @@ TextureImporter:
       name: Bird4_7
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1252
-        width: 800
-        height: 626
+        x: 1737
+        y: 1374
+        width: 487
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: Bird4_8
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 1252
-        width: 800
-        height: 626
+        x: 2542
+        y: 1368
+        width: 482
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: Bird4_9
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 1252
-        width: 800
-        height: 626
+        x: 3344
+        y: 1366
+        width: 480
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: Bird4_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 626
-        width: 800
-        height: 626
+        x: 142
+        y: 742
+        width: 482
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,10 +411,10 @@ TextureImporter:
       name: Bird4_11
       rect:
         serializedVersion: 2
-        x: 800
-        y: 626
-        width: 800
-        height: 626
+        x: 937
+        y: 748
+        width: 487
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +432,10 @@ TextureImporter:
       name: Bird4_12
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 626
-        width: 800
-        height: 626
+        x: 1731
+        y: 758
+        width: 493
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,10 +453,10 @@ TextureImporter:
       name: Bird4_13
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 626
-        width: 800
-        height: 626
+        x: 2527
+        y: 734
+        width: 497
+        height: 346
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,10 +474,10 @@ TextureImporter:
       name: Bird4_14
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 626
-        width: 800
-        height: 626
+        x: 3325
+        y: 719
+        width: 499
+        height: 363
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,10 +495,10 @@ TextureImporter:
       name: Bird4_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 800
-        height: 626
+        x: 127
+        y: 102
+        width: 497
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,10 +516,10 @@ TextureImporter:
       name: Bird4_16
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 800
-        height: 626
+        x: 931
+        y: 131
+        width: 493
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,10 +537,10 @@ TextureImporter:
       name: Bird4_17
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 800
-        height: 626
+        x: 1737
+        y: 122
+        width: 487
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,10 +558,10 @@ TextureImporter:
       name: Bird4_18
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 800
-        height: 626
+        x: 2542
+        y: 116
+        width: 482
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -579,10 +579,10 @@ TextureImporter:
       name: Bird4_19
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 800
-        height: 626
+        x: 3344
+        y: 114
+        width: 480
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
