@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerToSpawnTrap : MonoBehaviour
 {
-    public float Point;
+    private int Diamond;
+    public int Point;
+
     [SerializeField] GameObject Trap1;
     [SerializeField] GameObject Trap2;
     [SerializeField] GameObject Trap3;
@@ -22,7 +24,6 @@ public class PlayerToSpawnTrap : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -37,9 +38,10 @@ public class PlayerToSpawnTrap : MonoBehaviour
             RandomTrap();
         }
 
-        if(collision.gameObject.name != "Line1" || collision.gameObject.name != "Line3")
+        if(collision.gameObject.tag == "AllTrap")
         {
-            
+            Diamond += Point;
+            Debug.Log("Diamond: " + Diamond);
         }
     }
 
