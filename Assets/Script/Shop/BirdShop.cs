@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectPage : MonoBehaviour
+public class BirdShop : MonoBehaviour
 {
     private int Page = 1;
 
@@ -27,6 +27,17 @@ public class SelectPage : MonoBehaviour
     [SerializeField] private GameObject DisRightBtn;
     [SerializeField] private GameObject LeftButton;
     [SerializeField] private GameObject RightButton;
+    
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+
+    }
     public void NextPage()
     {
         if (Page < 4)
@@ -122,20 +133,5 @@ public class SelectPage : MonoBehaviour
         Debug.Log(Page);
 
     }
-
-    public void SelectedPage()
-    {
-        NextPage();
-        PreviousPage();
-        
-    }
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-       
-    }
+    
 }

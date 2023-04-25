@@ -6,7 +6,6 @@ public class SpawnItem : MonoBehaviour
 {
     public GameObject objectToBeSpawned;
     public Transform Parent;
-    private GameObject nameTag;
 
     private GameObject SetAcitveSpawn;
     void Start()
@@ -44,7 +43,5 @@ public class SpawnItem : MonoBehaviour
     void OnDisable()
     {
         gameObject.GetComponent<SpawnItem>().enabled = true;
-        
-
     }
 }

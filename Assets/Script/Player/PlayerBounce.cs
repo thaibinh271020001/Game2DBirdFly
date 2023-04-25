@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBounce : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Rigidbody2D rb0;
+    private Text Score;
 
     Vector3 lastVelocity;
     Vector2 vt = new Vector2(5f,10f);
@@ -17,7 +18,6 @@ public class PlayerBounce : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         lastVelocity = rb.velocity;
@@ -25,7 +25,6 @@ public class PlayerBounce : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().gravityScale = 2;
             rb.velocity = vt;
-            Debug.Log(vt);
 
         }
     }

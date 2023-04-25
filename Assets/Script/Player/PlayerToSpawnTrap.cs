@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerToSpawnTrap : MonoBehaviour
 {
-    private int Diamond;
-    public int Point;
+    public int Point;   
 
     [SerializeField] GameObject Trap1;
     [SerializeField] GameObject Trap2;
@@ -37,12 +36,6 @@ public class PlayerToSpawnTrap : MonoBehaviour
             SpawnTrap();
             RandomTrap();
         }
-
-        if(collision.gameObject.tag == "AllTrap")
-        {
-            Diamond += Point;
-            Debug.Log("Diamond: " + Diamond);
-        }
     }
 
     void SpawnTrap()
@@ -50,7 +43,6 @@ public class PlayerToSpawnTrap : MonoBehaviour
         switch (Point)
         {
             case 1:
-                Debug.Log(Point);
                 Trap3.SetActive(true);
                 break;
             case 2:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartGame : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class StartGame : MonoBehaviour
     public GameObject btnADS;
     public GameObject btnLeaderboard;
     public GameObject btnShop;
-    public GameObject textPoint;
+    public GameObject PointText;
+
+    private Text Score;
 
     private Rigidbody2D rb;
-
+    
     void Update()
     {
         clickToStart();
@@ -27,8 +30,7 @@ public class StartGame : MonoBehaviour
             btnADS.SetActive(false);
             btnLeaderboard.SetActive(false);
             btnShop.SetActive(false);
-            textPoint.SetActive(true);
-
+            PointText.SetActive(true);
         }
     }
 }

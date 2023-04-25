@@ -23,22 +23,19 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Rigidbody2D>().gravityScale = 2;
             if (Mathf.Approximately(transform.eulerAngles.y, 180f))
             {
                 player.velocity = vt2;
-                Debug.Log(player.velocity);
 
             }
             else
             {
                 player.velocity = vt1;
-                Debug.Log(player.velocity);
             }
-            Debug.Log(transform.rotation);
-        }
+        }*/
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
