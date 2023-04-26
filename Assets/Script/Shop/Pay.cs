@@ -40,7 +40,7 @@ public class Pay : Point
 
     public void BuyBird120()
     {
-        if (Locked[2].activeInHierarchy == true)
+        if (Locked[1].activeInHierarchy == true)
         {
             if (diamondPoint >= 120)
             {

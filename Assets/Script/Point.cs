@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class Point : MonoBehaviour
 {
     private PlayerToSpawnTrap PTST;
-    public Text Score;
+    public Text[] Score = new Text[2];
 
     public int DiamondPoint = 500;
     public Text Diamond;
+    int newDiamond;
     void Start()
     {
         PTST = GetComponent<PlayerToSpawnTrap>();
@@ -18,8 +19,9 @@ public class Point : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Score.text = "" + PTST.Point;
-        Diamond.text = "" + DiamondPoint;
+        Score[0].text = "" + PTST.Point;
+        Score[1].text = "" + PTST.Point;
+        Diamond.text = "" + newDiamond;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,6 +30,7 @@ public class Point : MonoBehaviour
         {
             DiamondPoint++;
             Debug.Log("Diamond Point: " + DiamondPoint);
+            newDiamond = DiamondPoint;
         }
     }
 }

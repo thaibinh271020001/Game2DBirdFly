@@ -30,7 +30,7 @@ public class SpawnItem : MonoBehaviour
 
             Invoke("SpawnObject", 5f);
 
-        }
+        }   
     }
 
     GameObject SpawnObject()
