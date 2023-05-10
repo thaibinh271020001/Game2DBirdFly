@@ -46,32 +46,25 @@ public class PlayerToSpawnTrap : MonoBehaviour
                 Trap3.SetActive(true);
                 break;
             case 2:
-                Debug.Log(Point);
                 Trap11.SetActive(true);
                 break;
             case 3:
-                Debug.Log(Point);
                 Trap7.SetActive(true);
                 break;
             case 5:
-                Debug.Log(Point);
                 Trap6.SetActive(true);
                 break;
             case 8:
-                Debug.Log(Point);
                 Trap10.SetActive(true);
                 break;
             case 13:
-                Debug.Log(Point);
                 Trap4.SetActive(true);
                 break;
             case 21:
-                Debug.Log(Point);
                 Trap5.SetActive(true);
                 Trap12.SetActive(true);
                 break;
             case 25:
-                Debug.Log(Point);
                 Trap5.SetActive(true);
                 break;
         }

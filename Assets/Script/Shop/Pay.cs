@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pay : Point
+public class Pay : MonoBehaviour
 {
-    int diamondPoint = 400;
+    int diamondPoint;
 
     public GameObject[] Use = new GameObject[16];
     public GameObject[] Locked = new GameObject[16];
@@ -12,7 +12,8 @@ public class Pay : Point
 
     void Start()
     {
-        Debug.Log(diamondPoint);
+        diamondPoint = DiamondPoint.Diamond;
+        Debug.Log(DiamondPoint.Diamond);
     }
 
     // Update is called once per frame
@@ -281,4 +282,6 @@ public class Pay : Point
     {
         notMoney.SetActive(false);
     }
+
+
 }

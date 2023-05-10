@@ -15,7 +15,6 @@ public class TextBlink : MonoBehaviour
     {
         textFlicker = GetComponent<Text>();
         timer += Random.Range(minTime, maxTime);
-        Debug.Log(timer);
     }
 
     void Update()

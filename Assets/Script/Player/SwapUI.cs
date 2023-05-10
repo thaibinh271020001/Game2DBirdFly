@@ -7,9 +7,11 @@ public class SwapUI : MonoBehaviour
 {
     [SerializeField] private GameObject MenuGame;
     [SerializeField] private GameObject RestartGame;
+
+    public Animator anim;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,10 +24,18 @@ public class SwapUI : MonoBehaviour
     {
         if (collision.gameObject.tag == "AllTrap")
         {
+            
             RestartGame.SetActive(true);
             MenuGame.SetActive(false);
+            Invoke("StopAnimation", 2f);
             Time.timeScale = 0f;
         }
+    }
+
+    public void StopAnimation()
+    {
+        anim.enabled = false;
+        Debug.Log("remove animation");
     }
 
     public void Resart()

@@ -6,7 +6,14 @@ using UnityEngine.UI;
 public class PlayerBounce : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Text Score;
+
+    public GameObject btnSetting;
+    public GameObject btnLeaderboard;
+    public GameObject btnShop;
+    public GameObject btnADS;
+    public GameObject PointText;
+
+    public Animator anim;
 
     Vector3 lastVelocity;
     Vector2 vt = new Vector2(5f,10f);
@@ -21,12 +28,23 @@ public class PlayerBounce : MonoBehaviour
     void Update()
     {
         lastVelocity = rb.velocity;
-        if (Input.GetMouseButtonDown(0))
+        if(rb.velocity.y < 10f)
         {
-            GetComponent<Rigidbody2D>().gravityScale = 2;
-            rb.velocity = vt;
-
+            anim.SetTrigger("Fall");
         }
+    }
+
+    public void ClickToPlay()
+    {
+        anim.SetTrigger("Fly");
+        GetComponent<Rigidbody2D>().gravityScale = 2;
+        rb.velocity = vt;
+
+        btnSetting.SetActive(false);
+        btnADS.SetActive(false);
+        btnLeaderboard.SetActive(false);
+        btnShop.SetActive(false);
+        PointText.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,5 +66,12 @@ public class PlayerBounce : MonoBehaviour
         {
             vt = vt1;
         }
+
+        if(collision.gameObject.tag == "AllTrap")
+        {
+            anim.SetTrigger("Colision");
+
+        }
+
     }
 }

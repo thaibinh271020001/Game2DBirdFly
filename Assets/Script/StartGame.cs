@@ -12,10 +12,6 @@ public class StartGame : MonoBehaviour
     public GameObject btnShop;
     public GameObject PointText;
 
-    private Text Score;
-
-    private Rigidbody2D rb;
-    
     void Update()
     {
         clickToStart();
@@ -26,11 +22,11 @@ public class StartGame : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hideObject.SetActive(false);
-            btnSetting.SetActive(false);
+            /*btnSetting.SetActive(false);
             btnADS.SetActive(false);
             btnLeaderboard.SetActive(false);
-            btnShop.SetActive(false);
-            PointText.SetActive(true);
+            btnShop.SetActive(false);*/
+            
         }
     }
 }
