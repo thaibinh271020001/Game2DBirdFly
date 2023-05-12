@@ -15,13 +15,6 @@ public class Pay : MonoBehaviour
         diamondPoint = DiamondPoint.Diamond;
         Debug.Log(DiamondPoint.Diamond);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void BuyBird100()
     {
         if(Locked[0].activeInHierarchy == true)

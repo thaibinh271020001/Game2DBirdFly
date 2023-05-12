@@ -5,17 +5,6 @@ using UnityEngine;
 public class RandomBackGroundByPlayer : MonoBehaviour
 {
     public Sprite[] sprites;
-    void Start()
-    {
-        //GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject otherGameObject = GameObject.Find("BackGround");

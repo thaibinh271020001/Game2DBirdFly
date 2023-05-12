@@ -22,10 +22,6 @@ public class StartGame : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hideObject.SetActive(false);
-            /*btnSetting.SetActive(false);
-            btnADS.SetActive(false);
-            btnLeaderboard.SetActive(false);
-            btnShop.SetActive(false);*/
             
         }
     }

@@ -13,13 +13,6 @@ public class SwapUI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "AllTrap")
@@ -40,7 +33,8 @@ public class SwapUI : MonoBehaviour
 
     public void Resart()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("SampleScene");
+        
+        Banner.Instance.ShowAd();
+        /*SceneManager.LoadScene("SampleScene");*/
     }
 }

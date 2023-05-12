@@ -8,6 +8,8 @@ TagManager:
   - AllLine
   - Spawn
   - Spawned
+  - Audio
+  - ClAudio
   layers:
   - Default
   - TransparentFX
