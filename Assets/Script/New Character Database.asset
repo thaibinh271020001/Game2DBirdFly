@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a40b8a1625780246989cc7b4f173dab, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterController: {fileID: 9100000, guid: ec6c9d7fbbf0e3e418f3165842140cdf, type: 2}
+  - characterController: {fileID: 9100000, guid: 08f4d0e27eceb5c43bf2469776f5e5b1, type: 2}
+  - characterController: {fileID: 9100000, guid: 3d6b506d43d906a4b84868e5fa2359dd, type: 2}
+  - characterController: {fileID: 9100000, guid: 12ef7ec94a9b5e94e95c18594644a496, type: 2}
+  - characterController: {fileID: 9100000, guid: b27fc9faffd77194bb2aadef079b5e18, type: 2}
+  - characterController: {fileID: 9100000, guid: 728b88ec56950c24da16425d57053fc2, type: 2}
+  - characterController: {fileID: 9100000, guid: 8dadcf3ed5bcb8545ad1e1981af99e8c, type: 2}
+  - characterController: {fileID: 9100000, guid: 1398647377070094299dde3802e2674f, type: 2}
+  - characterController: {fileID: 9100000, guid: fc5237a5aeef6a141819332bd37a3713, type: 2}
+  - characterController: {fileID: 9100000, guid: 26c1c2b3c0e3ea8468268253fbbdf49f, type: 2}
+  - characterController: {fileID: 9100000, guid: 16a699f787b701f4e94c6ab6ba13e5dd, type: 2}
+  - characterController: {fileID: 9100000, guid: dfe15709689046e43b2ded35c6efa6c5, type: 2}
+  - characterController: {fileID: 9100000, guid: a69f65da21bdeca4195998f3e2f97191, type: 2}
+  - characterController: {fileID: 9100000, guid: a12a0b8cfbe88b447834c230ee88211a, type: 2}
+  - characterController: {fileID: 9100000, guid: 812e8ec5b4938754bbef52c25252c008, type: 2}
+  - characterController: {fileID: 9100000, guid: 272ee96f1409ac143b59e78ff60b4128, type: 2}
