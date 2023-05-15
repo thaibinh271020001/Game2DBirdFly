@@ -10,7 +10,7 @@ public class DiamondPoint : MonoBehaviour
 
     void Start()
     {
-        Load();
+        Diamond = PlayerPrefs.GetInt("Money");
         DiamondText.text = "" + Diamond;
     }
 
@@ -18,16 +18,17 @@ public class DiamondPoint : MonoBehaviour
     {
         if(collision.gameObject.tag == "Spawned")
         {
-            Diamond++;
+            Diamond+=100;
             DiamondText.text = "" + Diamond;
-            PlayerPrefs.SetInt("DiamondP", Diamond);
+            PlayerPrefs.SetInt("DiamondP1", Diamond);
+            PlayerPrefs.SetInt("Money", Diamond);
         }
     }
 
     public void Load()
     {
-        Diamond = PlayerPrefs.GetInt("DiamondP");
-        Debug.Log("Point Diamond: " + PlayerPrefs.GetInt("DiamondP"));
+        Diamond = PlayerPrefs.GetInt("DiamondP1");
+        Debug.Log("Point Diamond: " + PlayerPrefs.GetInt("DiamondP1"));
     }
 
     public int RefDiamond()

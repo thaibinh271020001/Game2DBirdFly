@@ -2222,11 +2222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hideObject: {fileID: 833558}
-  btnSetting: {fileID: 0}
-  btnADS: {fileID: 0}
-  btnLeaderboard: {fileID: 0}
-  btnShop: {fileID: 0}
-  PointText: {fileID: 1084051285}
 --- !u!114 &599274300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2379,7 +2374,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDB: {fileID: 11400000, guid: 545eda40e7cec204fa70721ef9d96d4e, type: 2}
   characterAnimator: {fileID: 599274321}
-  ChooseOption: 0
 --- !u!1 &609664591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,19 +5114,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1579695775}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 599274327}
-        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
-        m_MethodName: ChooseToChangeCharacter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1579695775
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class StartGame : MonoBehaviour
 {
     public GameObject hideObject;
-    public GameObject btnSetting;
-    public GameObject btnADS;
-    public GameObject btnLeaderboard;
-    public GameObject btnShop;
-    public GameObject PointText;
 
     void Update()
     {

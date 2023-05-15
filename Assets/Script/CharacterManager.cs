@@ -8,13 +8,12 @@ public class CharacterManager : MonoBehaviour
 
     public Animator characterAnimator;
 
-    public int ChooseOption;
+    public static int ChooseOption;
 
     void Start()
     {
-        Load();
+        ChooseOption = PlayerPrefs.GetInt("SelectionCharacter");
         UpdateCharacter(ChooseOption);
-
     }
 
     public void ChooseToChangeCharacter()
@@ -25,12 +24,12 @@ public class CharacterManager : MonoBehaviour
             ChooseOption = 0;
         }
         UpdateCharacter(ChooseOption);
-        save();
     }
     public void UpdateCharacter(int ChooseOption)
     {
         Character character = CharacterDB.GetCharacter(ChooseOption);
         characterAnimator.runtimeAnimatorController = character.characterController;
+        save();
     }
     public void Load()
     {

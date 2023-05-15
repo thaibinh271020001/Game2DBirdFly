@@ -16,9 +16,9 @@ public class PlayerBounce : MonoBehaviour
     public Animator anim;
 
     Vector3 lastVelocity;
-    Vector2 vt = new Vector2(5f,10f);
-    Vector2 vt1 = new Vector2(5f,10f);
-    Vector2 vt2 = new Vector2(-5f,10f);
+    Vector2 vt = new Vector2(5f,12f);
+    Vector2 vt1 = new Vector2(5f, 12f);
+    Vector2 vt2 = new Vector2(-5f, 12f);
 
     void Start()
     {
@@ -27,6 +27,7 @@ public class PlayerBounce : MonoBehaviour
 
     void Update()
     {
+        
         lastVelocity = rb.velocity;
         if(rb.velocity.y < 10f)
         {
@@ -37,7 +38,7 @@ public class PlayerBounce : MonoBehaviour
     public void ClickToPlay()
     {
         anim.SetTrigger("Fly");
-        GetComponent<Rigidbody2D>().gravityScale = 2;
+        GetComponent<Rigidbody2D>().gravityScale = 2.5f;
         rb.velocity = vt;
 
         btnSetting.SetActive(false);
