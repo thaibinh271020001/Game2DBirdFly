@@ -7,7 +7,7 @@ public class RandomBackGroundByPlayer : MonoBehaviour
     public Sprite[] sprites;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject otherGameObject = GameObject.Find("BackGround");
+        GameObject otherGameObject = GameObject.Find("MainBG");
         SpriteRenderer spriteRenderer = otherGameObject.GetComponent<SpriteRenderer>();
         if(collision.gameObject.name == "Line2" || collision.gameObject.name == "Line4")
         {

@@ -35,7 +35,7 @@ public class SpawnItem : MonoBehaviour
 
     GameObject SpawnObject()
     {
-        var result = Instantiate(objectToBeSpawned, new Vector2(Random.Range(-3, -3), Random.Range(-9 / 2, 9 / 2)), Quaternion.identity, Parent);
+        var result = Instantiate(objectToBeSpawned, new Vector2(Random.Range(-1.94f, -1.94f), Random.Range(-3.54f, 3.54f)), Quaternion.identity, Parent);
         result.tag = "Spawned";
         result.SetActive(true);
         return result;
