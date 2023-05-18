@@ -35,4 +35,11 @@ public class DiamondPoint : MonoBehaviour
     {
         return Diamond;
     }
+
+    public void RewardADS()
+    {
+        int iamond = PlayerPrefs.GetInt("Money");
+        iamond += 20;
+        PlayerPrefs.SetInt("Money", iamond);
+    }
 }
