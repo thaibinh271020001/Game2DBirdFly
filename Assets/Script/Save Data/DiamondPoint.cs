@@ -18,7 +18,7 @@ public class DiamondPoint : MonoBehaviour
     {
         if(collision.gameObject.tag == "Spawned")
         {
-            Diamond+=100;
+            Diamond+=1;
             DiamondText.text = "" + Diamond;
             PlayerPrefs.SetInt("DiamondP1", Diamond);
             PlayerPrefs.SetInt("Money", Diamond);

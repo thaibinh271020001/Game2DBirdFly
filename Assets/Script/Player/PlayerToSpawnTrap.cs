@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerToSpawnTrap : MonoBehaviour
 {
-    public int Point;   
+    public int Point;
+    public int FirstHighScore;
+    public int HighScore;
+    public Text highScore;
+
+    public GameObject CanvasRestart;
 
     [SerializeField] GameObject Trap1;
     [SerializeField] GameObject Trap2;
@@ -18,14 +24,22 @@ public class PlayerToSpawnTrap : MonoBehaviour
     [SerializeField] GameObject Trap10;
     [SerializeField] GameObject Trap11;
     [SerializeField] GameObject Trap12;
-    void Start()
-    {
-        
-    }
 
-    void Update()
+    private void Update()
     {
-        
+        if (CanvasRestart.activeInHierarchy == true)
+        {
+            if (PlayerPrefs.GetInt("Score") >= PlayerPrefs.GetInt("CurrentScore"))
+            {
+                HighScore = PlayerPrefs.GetInt("Score");
+                PlayerPrefs.SetInt("CurrentScore", HighScore);
+                highScore.text = "" + HighScore;
+            }
+            else
+            {
+                highScore.text = "" + PlayerPrefs.GetInt("CurrentScore");
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,6 +49,12 @@ public class PlayerToSpawnTrap : MonoBehaviour
             Point++;
             SpawnTrap();
             RandomTrap();
+            
+        }
+
+        if(collision.gameObject.tag == "AllTrap")
+        {
+            PlayerPrefs.SetInt("Score", Point);
         }
     }
 

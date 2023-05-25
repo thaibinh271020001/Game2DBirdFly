@@ -7,6 +7,7 @@ public class PlayerBounce : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    public GameObject textPoint;
     public GameObject btnSetting;
     public GameObject btnLeaderboard;
     public GameObject btnShop;
@@ -46,6 +47,7 @@ public class PlayerBounce : MonoBehaviour
         btnLeaderboard.SetActive(false);
         btnShop.SetActive(false);
         PointText.SetActive(false);
+        textPoint.SetActive(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
