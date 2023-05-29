@@ -8,23 +8,23 @@ public class Banner : MonoBehaviour
 {
     /*BannerView bannerView;
     string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-
+*//*
     InterstitialAd interstitialAd;
-    string interstitialAdId = "ca-app-pub-3940256099942544/1033173712";
-    public void Start()
+    string interstitialAdId = "ca-app-pub-3940256099942544/1033173712";*/
+    /*public void Start()
     {
         MobileAds.Initialize(initStatus => { });
-        RequestBanner();
+        *//*RequestBanner();*//*
     }
-
-    void RequestBanner()
+*/
+    /*void RequestBanner()
     {
         bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
         AdRequest request = new AdRequest.Builder().Build();
         bannerView.LoadAd(request);
-    }
-    
-    void RequestInterstitial()
+    }*/
+
+    /*void RequestInterstitial()
     {
         interstitialAd = new InterstitialAd(interstitialAdId);
         AdRequest request = new AdRequest.Builder().Build();
@@ -37,7 +37,7 @@ public class Banner : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
@@ -71,8 +71,8 @@ public class Banner : MonoBehaviour
         InterstitialAd.Load(adUnitId, adRequest,
             (InterstitialAd ad, LoadAdError error) =>
             {
-              // if error is not null, the load request failed.
-              if (error != null || ad == null)
+                // if error is not null, the load request failed.
+                if (error != null || ad == null)
                 {
                     return;
                 }
@@ -90,7 +90,7 @@ public class Banner : MonoBehaviour
         }
         else
         {
-            
+
         }
     }
 

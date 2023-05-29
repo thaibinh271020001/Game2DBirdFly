@@ -37,8 +37,8 @@ public class AdsReward : MonoBehaviour
         RewardedAd.Load(adUnitId, adRequest,
             (RewardedAd ad, LoadAdError error) =>
             {
-              // if error is not null, the load request failed.
-              if (error != null || ad == null)
+                // if error is not null, the load request failed.
+                if (error != null || ad == null)
                 {
                     Debug.LogError("Rewarded ad failed to load an ad " +
                                    "with error : " + error);

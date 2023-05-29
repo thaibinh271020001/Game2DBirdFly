@@ -17,7 +17,7 @@ public class SwapUI : MonoBehaviour
     {
         if (collision.gameObject.tag == "AllTrap")
         {
-            
+
             RestartGame.SetActive(true);
             MenuGame.SetActive(false);
             Invoke("StopAnimation", 2f);
@@ -33,8 +33,7 @@ public class SwapUI : MonoBehaviour
 
     public void Resart()
     {
-        
+
         Banner.Instance.ShowAd();
-        /*SceneManager.LoadScene("SampleScene");*/
     }
 }
