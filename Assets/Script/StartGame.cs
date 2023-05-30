@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour
 
     void Update()
     {
+
         Application.targetFrameRate = 60;
         clickToStart();
     }

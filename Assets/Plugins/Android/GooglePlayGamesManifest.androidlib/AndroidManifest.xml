@@ -28,8 +28,6 @@
         <!-- Keep track of which plugin is being used -->
         <meta-data android:name="com.google.android.gms.games.unityVersion"
             android:value="\u0030.11.01" />
-		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" 
-				   android:value="ca-app-pub-7069222673419808~8014471130"/>
 
         <activity android:name="com.google.games.bridge.NativeBridgeActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />

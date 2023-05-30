@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SwapUI : MonoBehaviour
 {
-    [SerializeField] private GameObject MenuGame;
-    [SerializeField] private GameObject RestartGame;
+    public GameObject MenuGame;
+    public GameObject RestartGame;
 
     public Animator anim;
     void Start()
@@ -17,7 +17,6 @@ public class SwapUI : MonoBehaviour
     {
         if (collision.gameObject.tag == "AllTrap")
         {
-
             RestartGame.SetActive(true);
             MenuGame.SetActive(false);
             Invoke("StopAnimation", 2f);

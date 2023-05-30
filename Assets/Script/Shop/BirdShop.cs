@@ -28,16 +28,6 @@ public class BirdShop : MonoBehaviour
     [SerializeField] private GameObject LeftButton;
     [SerializeField] private GameObject RightButton;
     
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-    }
     public void NextPage()
     {
         if (Page < 4)
